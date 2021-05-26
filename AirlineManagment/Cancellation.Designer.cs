@@ -151,6 +151,7 @@
             this.cbTicketID.Name = "cbTicketID";
             this.cbTicketID.Size = new System.Drawing.Size(164, 28);
             this.cbTicketID.TabIndex = 92;
+            this.cbTicketID.SelectionChangeCommitted += new System.EventHandler(this.cbTicketID_SelectionChangeCommitted);
             // 
             // dateTimePicker1
             // 
@@ -187,6 +188,7 @@
             this.btnCancel.TabIndex = 95;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label5
             // 
@@ -246,6 +248,7 @@
             this.Name = "Cancellation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cancellation";
+            this.Load += new System.EventHandler(this.Cancellation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

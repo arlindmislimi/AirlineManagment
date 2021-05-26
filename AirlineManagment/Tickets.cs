@@ -37,7 +37,7 @@ namespace AirlineManagment
             SqlConnection con = new SqlConnection(cl2.konekcioni());
 
             con.Open();
-            string query = "select * from dbo.ticket";
+            string query = "select * from ticket";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -49,7 +49,7 @@ namespace AirlineManagment
         {
             SqlConnection con = new SqlConnection(cl2.konekcioni());
             con.Open();
-            SqlCommand cmd = new SqlCommand("select pId from dbo.passenger", con);
+            SqlCommand cmd = new SqlCommand("SELECT pId from passenger", con);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -63,7 +63,7 @@ namespace AirlineManagment
         {
             SqlConnection con = new SqlConnection(cl2.konekcioni());
             con.Open();
-            SqlCommand cmd = new SqlCommand("select fCode from dbo.flight", con);
+            SqlCommand cmd = new SqlCommand("select fCode from flight", con);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -73,12 +73,13 @@ namespace AirlineManagment
             cbFlightCode.DataSource = dt;
             con.Close();
         }
-        string pname, ppass, pnat;
+        string pname, ppass,pnat;
+        
         private void fetchpassenger()
         {
             SqlConnection con = new SqlConnection(cl2.konekcioni());
             con.Open();
-            string query = "select * from dbo.passenger where pId=" + cbPassengerID.SelectedValue.ToString() + "";
+            string query = "select * from passenger where pId=" + cbPassengerID.SelectedValue.ToString() + "";
             SqlCommand cmd = new SqlCommand(query, con);
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -95,7 +96,23 @@ namespace AirlineManagment
             con.Close();
         }
 
-        private void btnBook_Click(object sender, EventArgs e)
+                
+
+        private void btnReset_Click_1(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtPassport.Text = "";
+            txtNationality.Text = "";
+            txtAmount.Text = "";
+            txtTicketID.Text = "";
+        }
+
+        private void cbPassengerID_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            fetchpassenger();
+        }
+
+        private void btnBook_Click_1(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cl2.konekcioni());
             if (txtTicketID.Text == "" || txtName.Text == "")
@@ -104,43 +121,26 @@ namespace AirlineManagment
             }
             else
             {
-                try
-                {
+                
                     con.Open();
-                    string query = "insert into dbo.ticket values(" + txtTicketID.Text + "'," + cbFlightCode.SelectedValue.ToString() + "'," + cbPassengerID.SelectedValue.ToString() + ",'" + txtName.Text + "','" + txtPassport.Text + "','" + txtNationality + "'," + txtAmount + ")";
+                    string query = "insert into ticket values(" + txtTicketID.Text + ",'" + cbFlightCode.SelectedValue.ToString() + "','" + cbPassengerID.SelectedValue.ToString() + "','" + txtName.Text + "','" + txtPassport.Text + "','" + txtNationality + "','" + txtAmount.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Ticket Booked Successfully");
                     con.Close();
                     populate();
-                }
-                catch (Exception Ex)
-                {
-                    MessageBox.Show(Ex.Message);
-                }
+                
             }
-        }
-
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-
-            txtName.Text = "";
-            txtPassport.Text = "";
-            txtNationality.Text = "";
-            txtAmount.Text = "";
-            txtTicketID.Text = "";
         }
 
         private void Tickets_Load(object sender, EventArgs e)
         {
             fillPassenger();
+            
             fillFlightCode();
             populate();
         }
 
-        private void cbPassengerID_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            fetchpassenger();
-        }
+        
     }
 }
