@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AirlineDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AirlineDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlineDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AirlineDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirlineDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Cancellation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +145,39 @@
     <EmbeddedResource Include="ViewPassengers.resx">
       <DependentUpon>ViewPassengers.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="AirlineDataSet.xsc">
+      <DependentUpon>AirlineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AirlineDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlineDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlineDataSet.xss">
+      <DependentUpon>AirlineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AirlineDataSet1.xsc">
+      <DependentUpon>AirlineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AirlineDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlineDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlineDataSet1.xss">
+      <DependentUpon>AirlineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AirlineDataSet2.xsc">
+      <DependentUpon>AirlineDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AirlineDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirlineDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirlineDataSet2.xss">
+      <DependentUpon>AirlineDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

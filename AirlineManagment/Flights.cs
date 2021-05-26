@@ -29,11 +29,13 @@ namespace AirlineManagment
 
         private void Flights_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'airlineDataSet2.flight' table. You can move, or remove it, as needed.
+            this.flightTableAdapter.Fill(this.airlineDataSet2.flight);
 
         }
 
-               
-        
+
+
 
         private void btnViewFlights_Click(object sender, EventArgs e)
         {
@@ -46,10 +48,40 @@ namespace AirlineManagment
         {
             Application.Exit();
         }
-        
+
+        Class2 cl2 = new Class2();
+
         private void btnRecord_Click(object sender, EventArgs e)
         {
-            
+            if (txtFlight.Text == "" || cbDestination.SelectedItem.ToString() == "" || cbSource.SelectedItem.ToString() == "" || txtNumofSeats.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+
+            else
+            {
+                SqlConnection con = new SqlConnection(cl2.konekcioni());
+                con.Open();
+
+                string query = "INSERT " +
+                                "INTO flight(fCode, fSource, fDestination, fDate, fCapacity) " +
+                                "VALUES ('" + txtFlight.Text + "','" + cbSource.SelectedItem.ToString() + "','" + cbDestination.SelectedItem.ToString() + "','" + dateTimePicker1.Value.ToString("dd-MM-yyyy") + "','" + txtNumofSeats.Text + "')";
+
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                MessageBox.Show("Flight Recorded Successfully");
+                con.Close();
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtFlight.Clear();
+            cbDestination.ResetText();
+            cbSource.ResetText();
+            dateTimePicker1.ResetText();
+            txtNumofSeats.Clear();
         }
     }
 }
