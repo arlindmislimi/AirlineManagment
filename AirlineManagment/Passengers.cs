@@ -60,18 +60,20 @@ namespace AirlineManagment
                 con.Close();          
     
             }
+            Passengers passengers = new Passengers();
+            passengers.Show();
 
         }
 
         private void Passengers_Load(object sender, EventArgs e)
         {
-            
+
             string kon = cl2.konekcioni();
             SqlDataAdapter da = new SqlDataAdapter("SELECT pId FROM passenger ORDER BY pId DESC", kon);
             DataTable ds = new DataTable();
             da.Fill(ds);
             int count = int.Parse(ds.Rows[0][0].ToString());
-            label11.Text = (count + 1).ToString();                          
+            label11.Text = (count + 1).ToString();
 
         }
 
