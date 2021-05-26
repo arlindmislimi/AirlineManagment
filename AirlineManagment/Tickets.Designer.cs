@@ -59,9 +59,10 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Navy;
-            this.btnBack.Location = new System.Drawing.Point(551, 356);
+            this.btnBack.Location = new System.Drawing.Point(413, 289);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(117, 41);
+            this.btnBack.Size = new System.Drawing.Size(88, 33);
             this.btnBack.TabIndex = 29;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -72,9 +73,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Navy;
-            this.label7.Location = new System.Drawing.Point(293, 301);
+            this.label7.Location = new System.Drawing.Point(220, 245);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 25);
+            this.label7.Size = new System.Drawing.Size(71, 20);
             this.label7.TabIndex = 80;
             this.label7.Text = "Amount";
             // 
@@ -83,9 +85,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Navy;
-            this.label6.Location = new System.Drawing.Point(501, 249);
+            this.label6.Location = new System.Drawing.Point(376, 202);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 25);
+            this.label6.Size = new System.Drawing.Size(93, 20);
             this.label6.TabIndex = 79;
             this.label6.Text = "Nationality";
             // 
@@ -94,9 +97,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(60, 249);
+            this.label5.Location = new System.Drawing.Point(45, 202);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 25);
+            this.label5.Size = new System.Drawing.Size(80, 20);
             this.label5.TabIndex = 78;
             this.label5.Text = "Passport";
             // 
@@ -105,9 +109,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(501, 180);
+            this.label4.Location = new System.Drawing.Point(376, 146);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 25);
+            this.label4.Size = new System.Drawing.Size(55, 20);
             this.label4.TabIndex = 77;
             this.label4.Text = "Name\r\n";
             // 
@@ -116,9 +121,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(60, 180);
+            this.label2.Location = new System.Drawing.Point(45, 146);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 25);
+            this.label2.Size = new System.Drawing.Size(118, 20);
             this.label2.TabIndex = 76;
             this.label2.Text = "Passenger ID";
             // 
@@ -127,9 +133,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(501, 105);
+            this.label1.Location = new System.Drawing.Point(376, 85);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 25);
+            this.label1.Size = new System.Drawing.Size(101, 20);
             this.label1.TabIndex = 75;
             this.label1.Text = "Flight Code\r\n";
             // 
@@ -138,9 +145,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(60, 105);
+            this.label3.Location = new System.Drawing.Point(45, 85);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 25);
+            this.label3.Size = new System.Drawing.Size(81, 20);
             this.label3.TabIndex = 74;
             this.label3.Text = "Ticket ID";
             // 
@@ -149,9 +157,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(306, 41);
+            this.label8.Location = new System.Drawing.Point(230, 33);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(216, 64);
+            this.label8.Size = new System.Drawing.Size(168, 52);
             this.label8.TabIndex = 84;
             this.label8.Text = "Ticket Booking\r\n\r\n";
             // 
@@ -160,68 +169,76 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(331, 9);
+            this.label9.Location = new System.Drawing.Point(248, 7);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(161, 32);
+            this.label9.Size = new System.Drawing.Size(127, 26);
             this.label9.TabIndex = 83;
             this.label9.Text = "Sky Airline\r\n";
             // 
             // txtTicketID
             // 
             this.txtTicketID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTicketID.Location = new System.Drawing.Point(242, 103);
+            this.txtTicketID.Location = new System.Drawing.Point(182, 84);
+            this.txtTicketID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTicketID.Name = "txtTicketID";
-            this.txtTicketID.Size = new System.Drawing.Size(164, 27);
+            this.txtTicketID.Size = new System.Drawing.Size(124, 23);
             this.txtTicketID.TabIndex = 85;
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(630, 177);
+            this.txtName.Location = new System.Drawing.Point(472, 144);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(164, 27);
+            this.txtName.Size = new System.Drawing.Size(124, 23);
             this.txtName.TabIndex = 86;
             // 
             // txtNationality
             // 
             this.txtNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNationality.Location = new System.Drawing.Point(630, 247);
+            this.txtNationality.Location = new System.Drawing.Point(472, 201);
+            this.txtNationality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNationality.Name = "txtNationality";
-            this.txtNationality.Size = new System.Drawing.Size(164, 27);
+            this.txtNationality.Size = new System.Drawing.Size(124, 23);
             this.txtNationality.TabIndex = 87;
             // 
             // txtPassport
             // 
             this.txtPassport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassport.Location = new System.Drawing.Point(242, 247);
+            this.txtPassport.Location = new System.Drawing.Point(182, 201);
+            this.txtPassport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassport.Name = "txtPassport";
-            this.txtPassport.Size = new System.Drawing.Size(164, 27);
+            this.txtPassport.Size = new System.Drawing.Size(124, 23);
             this.txtPassport.TabIndex = 88;
             // 
             // txtAmount
             // 
             this.txtAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmount.Location = new System.Drawing.Point(405, 301);
+            this.txtAmount.Location = new System.Drawing.Point(304, 245);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(164, 27);
+            this.txtAmount.Size = new System.Drawing.Size(124, 23);
             this.txtAmount.TabIndex = 89;
             // 
             // cbPassengerID
             // 
             this.cbPassengerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPassengerID.FormattingEnabled = true;
-            this.cbPassengerID.Location = new System.Drawing.Point(242, 177);
+            this.cbPassengerID.Location = new System.Drawing.Point(182, 144);
+            this.cbPassengerID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbPassengerID.Name = "cbPassengerID";
-            this.cbPassengerID.Size = new System.Drawing.Size(164, 28);
+            this.cbPassengerID.Size = new System.Drawing.Size(124, 25);
             this.cbPassengerID.TabIndex = 90;
             // 
             // cbFlightCode
             // 
             this.cbFlightCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbFlightCode.FormattingEnabled = true;
-            this.cbFlightCode.Location = new System.Drawing.Point(630, 102);
+            this.cbFlightCode.Location = new System.Drawing.Point(472, 83);
+            this.cbFlightCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbFlightCode.Name = "cbFlightCode";
-            this.cbFlightCode.Size = new System.Drawing.Size(164, 28);
+            this.cbFlightCode.Size = new System.Drawing.Size(124, 25);
             this.cbFlightCode.TabIndex = 91;
             // 
             // btnReset
@@ -230,9 +247,10 @@
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Navy;
-            this.btnReset.Location = new System.Drawing.Point(375, 356);
+            this.btnReset.Location = new System.Drawing.Point(281, 289);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(117, 41);
+            this.btnReset.Size = new System.Drawing.Size(88, 33);
             this.btnReset.TabIndex = 92;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -243,9 +261,10 @@
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBook.ForeColor = System.Drawing.Color.Navy;
-            this.btnBook.Location = new System.Drawing.Point(187, 356);
+            this.btnBook.Location = new System.Drawing.Point(140, 289);
+            this.btnBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(117, 41);
+            this.btnBook.Size = new System.Drawing.Size(88, 33);
             this.btnBook.TabIndex = 93;
             this.btnBook.Text = "Book";
             this.btnBook.UseVisualStyleBackColor = false;
@@ -255,20 +274,22 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(381, 419);
+            this.label10.Location = new System.Drawing.Point(286, 340);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 50);
+            this.label10.Size = new System.Drawing.Size(83, 40);
             this.label10.TabIndex = 94;
             this.label10.Text = "Bookings\r\n\r\n";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(65, 451);
+            this.dataGridView1.Location = new System.Drawing.Point(49, 366);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(729, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(547, 150);
             this.dataGridView1.TabIndex = 95;
             // 
             // label11
@@ -276,18 +297,19 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(829, -1);
+            this.label11.Location = new System.Drawing.Point(622, -1);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 32);
+            this.label11.Size = new System.Drawing.Size(28, 26);
             this.label11.TabIndex = 96;
             this.label11.Text = "X\r\n";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // Tickets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 648);
+            this.ClientSize = new System.Drawing.Size(647, 526);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label10);
@@ -311,10 +333,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Tickets";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tickets";
-           
+            this.Load += new System.EventHandler(this.Tickets_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
