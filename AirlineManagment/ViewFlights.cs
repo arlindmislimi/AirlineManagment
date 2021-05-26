@@ -18,70 +18,13 @@ namespace AirlineManagment
         {
             InitializeComponent();
         }
-        
+
         private void ViewFlights_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'airlineDataSet1.flight' table. You can move, or remove it, as needed.
-            this.flightTableAdapter.Fill(this.airlineDataSet1.flight);
+            shfaqjanegrid();
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
 
         private void btnBack_Click(object sender, EventArgs e)
         {
@@ -94,6 +37,19 @@ namespace AirlineManagment
         {
             Application.Exit();
         }
+        Class2 cl2 = new Class2();
+        private void shfaqjanegrid()
+        {
+            SqlConnection con = new SqlConnection(cl2.konekcioni());
+            con.Open();
+            string query = "SELECT * FROM flight";
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -105,19 +61,17 @@ namespace AirlineManagment
             else
             {
                 con.Open();
-                string query = "UPDATE " +
-                    "           flight set fCode='" + txtFlight.Text +
-                                "',fSource='" + cbSource.SelectedItem.ToString() + "',fDestination='" + cbDestination.SelectedItem.ToString() + "',fDate='" + dateTimePicker1.Value.ToString("dd-MM-yyyy") + "',fCapacity='" + txtNumofSeats.Text + ";";
+                string query = "UPDATE flight set fSource='" + cbSource.SelectedItem.ToString() + "',fDestination='" + cbDestination.SelectedItem.ToString() + "',fDate='" + dateTimePicker1.Value.ToString("dd-MM-yyyy") + "',fCapacity='" + txtNumofSeats.Text + "';";
 
-               
+
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Flight Information has been Updated");
                 con.Close();
-                this.flightTableAdapter.Fill(this.airlineDataSet1.flight);
+                shfaqjanegrid();
             }
         }
-        Class2 cl2 = new Class2();
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cl2.konekcioni());
@@ -133,7 +87,7 @@ namespace AirlineManagment
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Flight Has Been Removed from The Schedule");
                 con.Close();
-                this.flightTableAdapter.Fill(this.airlineDataSet1.flight);
+                shfaqjanegrid();
                 ViewFlights viewFlights = new ViewFlights();
                 viewFlights.Show();
             }
@@ -146,6 +100,25 @@ namespace AirlineManagment
             cbSource.ResetText();
             dateTimePicker1.ResetText();
             txtNumofSeats.Clear();
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                string flightcode = row.Cells[0].Value.ToString();
+                string source = row.Cells[1].Value.ToString();
+                string destination = row.Cells[2].Value.ToString();
+                //string takeofdate = row.Cells[3].Value.ToString();
+                string numofseats = row.Cells[4].Value.ToString();
+
+                txtFlight.Text = flightcode;
+                cbSource.SelectedItem = source;
+                cbDestination.SelectedItem = destination;
+                
+                txtNumofSeats.Text = numofseats;
+
+            }
         }
     }
 }

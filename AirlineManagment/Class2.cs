@@ -14,9 +14,9 @@ namespace AirlineManagment
         {
 
             
-            string con = "Data Source=VELID\\SQLEXPRESS;Initial Catalog=Airline;Integrated Security=True";
+            //string con = "Data Source=VELID\\SQLEXPRESS;Initial Catalog=Airline;Integrated Security=True";
 
-            //string con = "Data Source=ARLIND\\SQLEXPRESS;Initial Catalog=Airline;Integrated Security=True";
+            string con = "Data Source=ARLIND\\SQLEXPRESS;Initial Catalog=Airline;Integrated Security=True";
             //string con = "Data Source=DESKTOP-5PA268E\\MSSQLSERVER01;Integrated Security=True";
 
             return con;

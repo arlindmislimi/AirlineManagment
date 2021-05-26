@@ -30,7 +30,7 @@ namespace AirlineManagment
         private void Flights_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'airlineDataSet2.flight' table. You can move, or remove it, as needed.
-            this.flightTableAdapter.Fill(this.airlineDataSet2.flight);
+            //this.flightTableAdapter.Fill(this.airlineDataSet2.flight);
 
         }
 
